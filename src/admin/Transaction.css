@@ -1,0 +1,96 @@
+.transaction {
+  display: flex;
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Centers items horizontally */
+  height: 100vh; /* Takes full viewport height to ensure vertical centering */
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.left {
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.left img {
+  height: 40vh;
+}
+
+.right {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align items at the top */
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 70%; /* Ensures that the .right container doesn't stretch too much */
+  height: 70vh; /* Adjust height to fit within the parent container */
+  overflow: hidden; /* Prevent overflow within this container */
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  width: 85%; /* Make search bar take most of the space */
+  padding-bottom: 5px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc; /* Only bottom border */
+  outline: none;
+}
+
+.search-bar:focus {
+  border-bottom-color: #1976d2; /* Blue border when focused */
+}
+
+.download-btn {
+  color: #1976d2;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.download-btn:hover {
+  color: #115293;
+}
+
+.table-container {
+  width: 100%; /* Full width of the container */
+  max-width: 1000px; /* Maximum width to prevent too wide a table */
+  height: 400px; /* Fixed height to allow scrolling */
+  overflow-y: auto; /* Enables vertical scrolling */
+  overflow-x: auto; /* Enables horizontal scrolling if needed */
+  margin: 0 auto; /* Center the table container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add slight shadow */
+}
+
+.table {
+  width: 100%; /* Full width of the table container */
+  border-collapse: collapse; /* Ensure borders don't take extra space */
+}
+
+.table th, .table td {
+  padding: 12px 15px; /* Add spacing inside cells */
+  border-bottom: 1px solid #ddd; /* Add border to distinguish rows */
+  text-align: left; /* Align text to the left */
+}
+
+.table th {
+  background-color: #f7f7f7; /* Light background for table headers */
+  font-weight: bold;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1; /* Slight hover effect for table rows */
+}
